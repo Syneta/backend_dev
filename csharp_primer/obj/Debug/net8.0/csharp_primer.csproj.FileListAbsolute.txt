@@ -1,0 +1,14 @@
+C:\Documents\backend_dev\csharp_primer\bin\Debug\net8.0\csharp_primer.exe
+C:\Documents\backend_dev\csharp_primer\bin\Debug\net8.0\csharp_primer.deps.json
+C:\Documents\backend_dev\csharp_primer\bin\Debug\net8.0\csharp_primer.runtimeconfig.json
+C:\Documents\backend_dev\csharp_primer\bin\Debug\net8.0\csharp_primer.dll
+C:\Documents\backend_dev\csharp_primer\bin\Debug\net8.0\csharp_primer.pdb
+C:\Documents\backend_dev\csharp_primer\obj\Debug\net8.0\csharp_primer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documents\backend_dev\csharp_primer\obj\Debug\net8.0\csharp_primer.AssemblyInfoInputs.cache
+C:\Documents\backend_dev\csharp_primer\obj\Debug\net8.0\csharp_primer.AssemblyInfo.cs
+C:\Documents\backend_dev\csharp_primer\obj\Debug\net8.0\csharp_primer.csproj.CoreCompileInputs.cache
+C:\Documents\backend_dev\csharp_primer\obj\Debug\net8.0\csharp_primer.dll
+C:\Documents\backend_dev\csharp_primer\obj\Debug\net8.0\refint\csharp_primer.dll
+C:\Documents\backend_dev\csharp_primer\obj\Debug\net8.0\csharp_primer.pdb
+C:\Documents\backend_dev\csharp_primer\obj\Debug\net8.0\csharp_primer.genruntimeconfig.cache
+C:\Documents\backend_dev\csharp_primer\obj\Debug\net8.0\ref\csharp_primer.dll
