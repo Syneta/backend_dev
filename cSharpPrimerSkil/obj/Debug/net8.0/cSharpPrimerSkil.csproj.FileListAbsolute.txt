@@ -1,0 +1,14 @@
+C:\Users\sigur\source\repos\cSharpPrimerSkil\bin\Debug\net8.0\cSharpPrimerSkil.exe
+C:\Users\sigur\source\repos\cSharpPrimerSkil\bin\Debug\net8.0\cSharpPrimerSkil.deps.json
+C:\Users\sigur\source\repos\cSharpPrimerSkil\bin\Debug\net8.0\cSharpPrimerSkil.runtimeconfig.json
+C:\Users\sigur\source\repos\cSharpPrimerSkil\bin\Debug\net8.0\cSharpPrimerSkil.dll
+C:\Users\sigur\source\repos\cSharpPrimerSkil\bin\Debug\net8.0\cSharpPrimerSkil.pdb
+C:\Users\sigur\source\repos\cSharpPrimerSkil\obj\Debug\net8.0\cSharpPrimerSkil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sigur\source\repos\cSharpPrimerSkil\obj\Debug\net8.0\cSharpPrimerSkil.AssemblyInfoInputs.cache
+C:\Users\sigur\source\repos\cSharpPrimerSkil\obj\Debug\net8.0\cSharpPrimerSkil.AssemblyInfo.cs
+C:\Users\sigur\source\repos\cSharpPrimerSkil\obj\Debug\net8.0\cSharpPrimerSkil.csproj.CoreCompileInputs.cache
+C:\Users\sigur\source\repos\cSharpPrimerSkil\obj\Debug\net8.0\cSharpPrimerSkil.dll
+C:\Users\sigur\source\repos\cSharpPrimerSkil\obj\Debug\net8.0\refint\cSharpPrimerSkil.dll
+C:\Users\sigur\source\repos\cSharpPrimerSkil\obj\Debug\net8.0\cSharpPrimerSkil.pdb
+C:\Users\sigur\source\repos\cSharpPrimerSkil\obj\Debug\net8.0\cSharpPrimerSkil.genruntimeconfig.cache
+C:\Users\sigur\source\repos\cSharpPrimerSkil\obj\Debug\net8.0\ref\cSharpPrimerSkil.dll
