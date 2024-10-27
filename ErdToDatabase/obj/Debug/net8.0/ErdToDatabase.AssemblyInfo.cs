@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ErdToDatabase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e710a11b88dcc8574fc51b98bc16c0598048fca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c30a118606f87f1f8e8cc9f162c9e91466170ea3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ErdToDatabase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ErdToDatabase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
