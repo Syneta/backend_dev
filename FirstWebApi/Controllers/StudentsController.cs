@@ -1,4 +1,5 @@
-﻿using FirstWebApi.Models;
+﻿using FirstWebApi.Data;
+using FirstWebApi.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FirstWebApi.Controllers
@@ -7,26 +8,30 @@ namespace FirstWebApi.Controllers
     [Controller]
     public class StudentsController : ControllerBase
     {
-        [HttpGet]
-        public List<Student> AllStudents()
+        private readonly SchoolRepository _repo;
+
+        public StudentsController()
         {
-            return new List<Student>             {
-                new Student { StudentId = 1, FirstName = "John", LastName = "Doe", SSID = "123-45-6789" },
-                new Student { StudentId = 2, FirstName = "Jane", LastName = "Smith", SSID = "987-65-4321" }
-            };
+            _repo = new SchoolRepository();
         }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Student>> GetAllStudents()
+        {
+            return _repo.GetAllStudents();
+        }
+
         [HttpGet]
         [Route("{id}")]
-        public Student GetStudentById(int id)
+        public ActionResult<Student> GetStudentById(int id)
         {
-            List<Student> s = new List<Student>
+            
+            var student = _repo.GetStudentById(id);
+            if (_repo.GetStudentById(id) != null)
             {
-                new Student { StudentId = 1, FirstName = "John", LastName = "Doe", SSID = "123-45-6789" },
-                new Student { StudentId = 2, FirstName = "Jane", LastName = "Smith", SSID = "987-65-4321" },
-                new Student { StudentId = 3, FirstName = "Alice", LastName = "Wonderland", SSID = "456-78-9123" },
-            };
-
-            return s.FirstOrDefault(s => s.StudentId == id);
+                return Ok(_repo.GetStudentById(id));
+            }
+            return NotFound();
         }
     }
 }
