@@ -41,6 +41,11 @@ namespace WebApi_Skil_5.Controllers
             _context.Subjects.Add(subject);
             await _context.SaveChangesAsync();
 
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             return CreatedAtAction(nameof(GetSubject), new { id = subject.SubjectId }, subject);
         }
 
@@ -50,6 +55,11 @@ namespace WebApi_Skil_5.Controllers
             if (id != subject.SubjectId)
             {
                 return BadRequest();
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
             }
 
             _context.Entry(subject).State = EntityState.Modified;

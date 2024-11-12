@@ -11,9 +11,9 @@ namespace WebApi_Skil_5.Models
     {
         public int TeacherId { get; set; }
         [Column(TypeName = "nvarchar(50)")]
-        public string TeacherFirstName { get; set; } = null!;
+        public string TeacherFirstName { get; set; }
         [Column(TypeName = "nvarchar(50)")]
-        public string TeacherLastName { get; set; } = null!;
+        public string TeacherLastName { get; set; }
         public List<Subject> Subjects { get; set; } = new List<Subject>();
     }
 }

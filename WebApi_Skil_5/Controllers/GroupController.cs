@@ -38,6 +38,10 @@ namespace WebApi_Skil_5.Controllers
         [HttpPost]
         public async Task<ActionResult<Group>> PostGroup(Group group)
         {
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             _context.Groups.Add(group);
             await _context.SaveChangesAsync();
 
@@ -50,6 +54,11 @@ namespace WebApi_Skil_5.Controllers
             if (id != group.GroupId)
             {
                 return BadRequest();
+            }
+
+            if(ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
             }
 
             _context.Entry(group).State = EntityState.Modified;

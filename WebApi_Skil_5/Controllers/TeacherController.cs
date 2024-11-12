@@ -48,22 +48,30 @@ namespace WebApi_Skil_5.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<TeacherDTO>> GetTeacher(int id)
         {
-            var teacher = await _repository.GetByIdAsync(id);
+            var teacher = await _repository.GetByIdWithIncludesAsync(id, t => t.Subjects);
             if (teacher == null)
             {
                 return NotFound();
             }
+
             var teacherDTO = new TeacherDTO
             {
                 TeacherId = teacher.TeacherId,
                 TeacherFirstName = teacher.TeacherFirstName,
                 TeacherLastName = teacher.TeacherLastName,
-                Subjects = teacher.Subjects.Select(s => new SubjectDTO
+                Subjects = teacher.Subjects?.Select(s => new SubjectDTO
                 {
                     SubjectId = s.SubjectId,
-                    Title = s.Title
+                    Title = s.Title,
+                    Students = s.Students?.Select(st => new StudentDTO
+                    {
+                        StudentId = st.StudentId,
+                        StudentFirstName = st.StudentFirstName,
+                        StudentLastName = st.StudentLastName
+                    }).ToList()
                 }).ToList()
             };
+
             return Ok(teacherDTO);
         }
 

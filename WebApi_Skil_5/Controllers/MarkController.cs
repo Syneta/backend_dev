@@ -38,8 +38,13 @@ namespace WebApi_Skil_5.Controllers
         [HttpPost]
         public async Task<ActionResult<Mark>> PostMark(Mark mark)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             _context.Marks.Add(mark);
             await _context.SaveChangesAsync();
+
 
             return CreatedAtAction(nameof(GetMark), new { id = mark.MarkId }, mark);
         }
@@ -50,6 +55,11 @@ namespace WebApi_Skil_5.Controllers
             if (id != mark.MarkId)
             {
                 return BadRequest();
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
             }
 
             _context.Entry(mark).State = EntityState.Modified;
